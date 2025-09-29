@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:my_portfolio/views/about_me.dart';
 import 'package:my_portfolio/views/contact_us.dart';
 import 'package:my_portfolio/views/footer_class.dart';
@@ -34,7 +35,7 @@ class _MainDashBoardState extends State<MainDashBoard> {
 
   var menuIndex = 0;
 
-  final screensList = const <Widget>[
+  final screensList = <Widget>[
     HomePage(),
     AboutMe(),
     MyServices(),
@@ -65,7 +66,7 @@ class _MainDashBoardState extends State<MainDashBoard> {
       backgroundColor: AppColors.bgColor,
       appBar: AppBar(
         backgroundColor: AppColors.bgColor,
-        toolbarHeight: 90,
+        toolbarHeight: 60,
         titleSpacing: 40,
         elevation: 0,
         title: LayoutBuilder(
@@ -74,9 +75,13 @@ class _MainDashBoardState extends State<MainDashBoard> {
               return Row(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  const Text(
+                  Text(
                     'Portfolio',
-                    style: TextStyle(color: Colors.white),
+                    style: GoogleFonts.signikaNegative(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.white,
+                    ),
                   ),
                   const Spacer(),
                   PopupMenuButton(
@@ -109,9 +114,13 @@ class _MainDashBoardState extends State<MainDashBoard> {
               return Row(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  const Text(
+                  Text(
                     'Portfolio',
-                    style: TextStyle(color: Colors.white),
+                    style: GoogleFonts.signikaNegative(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.white,
+                    ),
                   ),
                   const Spacer(),
                   SizedBox(

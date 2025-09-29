@@ -105,6 +105,7 @@ class _HomePageState extends State<HomePage> {
                 'And I\'m a ',
                 style: AppTextStyles.montserratStyle(color: Colors.white),
               ),
+              // animated text kit jo ka text ko duration ka sath banya ga
               AnimatedTextKit(
                 animatedTexts: [
                   TyperAnimatedText(
@@ -119,7 +120,8 @@ class _HomePageState extends State<HomePage> {
                       textStyle: AppTextStyles.montserratStyle(
                           color: Colors.lightBlue))
                 ],
-                pause: const Duration(milliseconds: 1000),
+                // ya time higa text on off
+                pause: const Duration(seconds: 1),
                 displayFullTextOnTap: true,
                 stopPauseOnTap: true,
               )
